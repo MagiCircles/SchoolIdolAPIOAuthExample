@@ -17,7 +17,7 @@ def oauthdone(request):
     r = requests.post(settings.API_URL + 'o/token/', data={
         'grant_type': 'authorization_code',
         'code': request.GET['code'],
-        'redirect_uri': 'http://localhost:8000/oauthdone/',
+        'redirect_uri': '{}{}/oauthdone/'.format('https://' if request.is_secure() else 'http://', request.META['HTTP_HOST']),
         'client_id': settings.OAUTH_CLIENT_ID,
         'client_secret': settings.OAUTH_CLIENT_SECRET,
     })
