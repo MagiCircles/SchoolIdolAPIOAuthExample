@@ -25,3 +25,11 @@ $EDITOR settings.py
 # 6. Start the server on http://localhost:8000/
 python manage.py runserver
 ```
+
+You can also test it using `Docker`
+```shell
+# You need to be in the Python/ directory, after editing the settings.py
+docker build -t sukutomoauth .
+# Run the container
+docker run -d -p 8000:8000 sukutomoauth
+```
