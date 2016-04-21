@@ -12,7 +12,7 @@ TEMPLATES = [
         ],
     },
 ]
-API_URL='http://schoolido.lu/api/'
+API_URL='http://schoolido.lu/'
 
 # Change the settings here
 OAUTH_CLIENT_ID = ''
