@@ -12,7 +12,7 @@ TEMPLATES = [
         ],
     },
 ]
-API_URL='http://localhost:9000/'
+API_URL='http://schoolido.lu/api/'
 
 # Change the settings here
 OAUTH_CLIENT_ID = ''
